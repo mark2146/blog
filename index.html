@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-        *{
-            margin: 0 0 0 0 ;
-        }
         .flex{
             display:flex;
             justify-content: space-evenly;
         }
-        hr{
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        h1{
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        .website{
-            background-color: #F6F7F8;
-            width: 100%;
-            height: 100%;
-        }
+        
         .head{
             background-color: white;
         }
         .mid{
-            vertical-align: center;
-            justify-content: center;
+            background-color: #F6F7F8;
+            padding: 20px 50px 20px 50px;
+            height: 100%;
+        }
+        .conten{
+            background-color: white;
         }
     </style>
 </head>
-<body class="website"> 
-        <div class="head">
-            <h1>Mark's Blog</h1>
-            <hr>
-            <ul class="flex">
-                <li>CPE</li>
-                <li>Codeforce</li>
-                <li>學習歷程</li>
-                <li>自我介紹</li>
-            </ul>
-            <hr>
+<body> 
+        <div class="container">
+            <div class="row">
+                <h1>Mark's Blog</h1>
+                <hr>
+                <ul class="flex">
+                    <li>CPE</li>
+                    <li>Codeforce</li>
+                    <li>學習歷程</li>
+                    <li>自我介紹</li>
+                </ul>
+                <hr>
+            </div>
         </div>
-
-
         <div class="mid">
-            <p>sgkngkarnjkv ndkjnkdmlkmlkndkln;klm</p>
+            <div class="container">
+                <div class="row">
+                    <div class="conten">
+                        <h2>網站介紹</h2>
+                        <ul>
+                            <li>CPE 大學程式能力檢定</li>
+                            <li>Codeforce解題紀錄</li>
+                            <li>學習歷程</li>
+                            <li>自我介紹</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 </html>
