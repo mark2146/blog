@@ -13,12 +13,6 @@
         .push{
             margin-left: 20px;
         }
-        .head{
-            background-color: white;
-        }
-        .change{
-            margin-bottom: 0;
-        }
         .mid{
             background-color: #F6F7F8;
             padding: 20px 50px 20px 50px;
@@ -27,31 +21,49 @@
         .conten{
             background-color: white;
         }
+        .conten1{
+            background-color: white;
+            margin-left: 40px;
+        }
         footer{
             height: 5vh;
             text-align: center;
             background-color:#262f3c;
         }
+        ul {
+        list-style: none; /* 移除點點 */
+        }
     </style>
 </head>
 <body> 
+        <header style="background-color: w;"><header>
         <div class="container">
             <div class="row">
-                <h1>Mark's Blog</h1>
-                <hr>
+                <h1 style="padding: 20px;">Mark's Blog</h1>
+            </div>
+        </div>
+        <hr style="margin-top: 0;">
+        <div class="container">
+            <div class="row">
                 <ul class="flex">
-                    <a href="">CPE</a>
-                    <a class="push">Codeforce</a>
+                    <a href="index.html">Home</a>
+                    <a class="push">CPE</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle push" href="#" role="button" data-bs-toggle="dropdown">Codeforce</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="codeforce.html">Option 1</a></li>
+                        </ul>
+                    </li>
                     <a class="push">學習歷程</a>
                     <a class="push">自我介紹</a>
                 </ul>
-                <hr class="change">
             </div>
         </div>
+        <hr style="margin-top: 0; margin-bottom: 0;">
         <div class="mid">
             <div class="container">
-                <div class="row">
-                    <div class="conten">
+                <div class="row flex">
+                    <div class="conten col-7">
                         <h2>網站選單 Website Menu</h2>
                         <ul>
                             <li>CPE 大學程式能力檢定</li>
@@ -59,6 +71,10 @@
                             <li>學習歷程</li>
                             <li>自我介紹</li>
                         </ul>
+                    </div>
+                    <div class="col-1" style="background-color: #F6F7F8;"></div>
+                    <div class="conten1 col-3">
+                        <p>gedrth</p>
                     </div>
                 </div>
             </div>
