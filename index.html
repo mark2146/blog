@@ -9,19 +9,28 @@
     <style>
         .flex{
             display:flex;
-            justify-content: space-evenly;
         }
-        
+        .push{
+            margin-left: 20px;
+        }
         .head{
             background-color: white;
+        }
+        .change{
+            margin-bottom: 0;
         }
         .mid{
             background-color: #F6F7F8;
             padding: 20px 50px 20px 50px;
-            height: 100%;
+            height: 95vh;
         }
         .conten{
             background-color: white;
+        }
+        footer{
+            height: 5vh;
+            text-align: center;
+            background-color:#262f3c;
         }
     </style>
 </head>
@@ -31,19 +40,19 @@
                 <h1>Mark's Blog</h1>
                 <hr>
                 <ul class="flex">
-                    <li>CPE</li>
-                    <li>Codeforce</li>
-                    <li>學習歷程</li>
-                    <li>自我介紹</li>
+                    <a href="">CPE</a>
+                    <a class="push">Codeforce</a>
+                    <a class="push">學習歷程</a>
+                    <a class="push">自我介紹</a>
                 </ul>
-                <hr>
+                <hr class="change">
             </div>
         </div>
         <div class="mid">
             <div class="container">
                 <div class="row">
                     <div class="conten">
-                        <h2>網站介紹</h2>
+                        <h2>網站選單 Website Menu</h2>
                         <ul>
                             <li>CPE 大學程式能力檢定</li>
                             <li>Codeforce解題紀錄</li>
@@ -55,4 +64,7 @@
             </div>
         </div>
 </body>
+<footer>
+    <p style="color: #F6F7F8;">@Mark's</p>
+</footer>
 </html>
