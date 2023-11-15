@@ -24,7 +24,7 @@
         }
         .mid{
             background-color: #F6F7F8;
-            padding: 20px 50px 20px 50px;
+            padding: 40px 50px 20px 50px;
             height: 95vh;
         }
         .conten{
@@ -84,22 +84,19 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2>題解 Codeforce 4A - Watermelon</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 4A - Watermelon</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
                             
-                            int main() {
-                                int x;
-                                cin&gt;&gt;x;
-                                int y=x-2;
-                                if(y%2 || y==0){
-                                    cout&lt;&lt;&quot;NO&quot;&lt;&lt;endl;
-                                }else{
-                                    cout&lt;&lt;&quot;YES&quot;&lt;&lt;endl;
-                                }
+                            int main()
+                            {
+                                int a,b;
+                                cin&gt;&gt;a&gt;&gt;b;
+                                cout&lt;&lt;a*b/2&lt;&lt;endl;
+                                return 0;
                             }
                         </pre>
                     </div>
