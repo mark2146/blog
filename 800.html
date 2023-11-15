@@ -14,16 +14,18 @@
             margin-left: 20px;/*導覽列排序*/
         }
         .mid{
-            background-color: #F6F7F8;
-            padding: 20px 50px 20px 50px;
-            height: 95vh;
-        }
-        .conten{
+        background-color: #F6F7F8;
+        padding: 40px 50px 20px 50px;
+    }
+        .conten, .conten1{
             background-color: white;
+            /* 移除 overflow-y: auto; 如果您不想在 .conten1 内部有滚动条 */
         }
         .conten1{
-            background-color: white;
             margin-left: 40px;
+        /* 设置一个合适的最大高度或者完全移除这个属性 */
+            max-height: 80vh; /* 例如设置为视窗高度的95%，或者根据需要调整 */
+            overflow-y: auto; /* 如果内容超出，将显示滚动条 */
         }
         footer{
             height: 5vh;
@@ -47,7 +49,7 @@
             background-color: #FAFAFA;
         }
         ul {
-        list-style: none; /* 移除點點 */
+            list-style: none; /* 移除點點 */
         }
     </style>
 </head>
@@ -97,23 +99,81 @@
                                     <td>Sep/14/2023</td>
                                 </tr>
                                 <tr>
-                                    <td>排序演算法</td>
-                                    <td>Jane Smith</td>
-                                    <td>1.5 小時</td>
+                                    <td>71A - Way Too Long Words</td>
+                                    <td><a href="codeforce/71A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
                                 </tr>
+                                <tr>
+                                    <td>231A - Team</td>
+                                    <td><a href="codeforce/231A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>158A - Next Round</td>
+                                    <td><a href="codeforce/158A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+
+                                <tr>
+                                    <td>282A - Bit++</td>
+                                    <td><a href="codeforce/282A.html">Link</a></td>
+                                    <td>Sep/17/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>50A - Domino piling</td>
+                                    <td><a href="codeforce/50A.html">Link</a></td>
+                                    <td>Sep/17/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>263A - Beautiful Matrix</td>
+                                    <td><a href="codeforce/263A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>112A - Petya and Strings</td>
+                                    <td><a href="codeforce/112A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>339A - Helpful Maths</td>
+                                    <td><a href="codeforce/339A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>281A - Word Capitalization</td>
+                                    <td><a href="codeforce/281A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>236A - Boy or Girl</td>
+                                    <td><a href="codeforce/236A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>266A - Stones on the Table</td>
+                                    <td><a href="codeforce/266A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                <tr>
+                                    <td>281A - Word Capitalization</td>
+                                    <td><a href="codeforce/281A.html">Link</a></td>
+                                    <td>Sep/15/2023</td>
+                                </tr>
+                                
+
                                 <!-- 添加更多行，根據需要調整內容 -->
                             </tbody>
                         </table>
                     </div>
                     <div class="col-1" style="background-color: #F6F7F8;"></div>
-                    <div class="conten1 col-3">
+                        <div class="conten1 col-3">
                             <iframe
                             src="https://www.chatbase.co/chatbot-iframe/O2vt1RgkbY8P6aHvQhyTl"
                             width="100%"
-                            style="height: 100%; min-height: 700px"
+                            style="height: 100%; overflow-y: auto;" /* Removed min-height */
                             frameborder="0"
                             ></iframe>                 
-                    </div>
+                        </div>               
                 </div>
             </div>
         </div>
