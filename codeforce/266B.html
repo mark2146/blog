@@ -87,24 +87,32 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">題解 Codeforce 617A - Elephant</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 266B - Queue at the School</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
-                            
                             int main(){
-                            int a,b,c;
-                            cin&gt;&gt;a;
-                            b=a/5;
-                            if(a%5==0){
-                                cout&lt;&lt;b;
-                            }else{
-                                cout&lt;&lt;b+1;
-                                
+                                int n,s;
+                                cin&gt;&gt;n&gt;&gt;s;
+                                string a;
+                                cin&gt;&gt;a;
+                                while (s--){
+                                    for(int i=0;i&lt;n;i++){
+                                        if (a[i] == &#39;G&#39; &amp;&amp; a[i-1] == &#39;B&#39;)
+                                        {
+                                            swap(a[i],a[i-1]);
+                                            ++i;
+                                        }
+                                    }
+                                }
+                                for(int i=0;i&lt;a.length();i++){
+                                    cout&lt;&lt;a[i];
+                                }
+                                return 0;
                             }
-                            }
+
                         </pre>
                     </div>
                     <div class="col-1" style="background-color: #F6F7F8;"></div>

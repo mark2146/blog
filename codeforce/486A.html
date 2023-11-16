@@ -87,23 +87,21 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">題解 Codeforce 617A - Elephant</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 486A - Calculating Function</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
-                            #include &lt;bits/stdc++.h&gt;
-                            using namespace std;
-                            
+                            #include&lt;bits/stdc++.h&gt;
                             int main(){
-                            int a,b,c;
-                            cin&gt;&gt;a;
-                            b=a/5;
-                            if(a%5==0){
-                                cout&lt;&lt;b;
-                            }else{
-                                cout&lt;&lt;b+1;
-                                
-                            }
+                            long long  x;
+                            long long  sum=0,i;
+                            scanf(&quot;%lld&quot;,&amp;x);
+                            
+                            if(x%2==0) sum= x/2;
+                            else sum = ((x+1)/2)*-1;
+                            
+                            printf(&quot;%lld&quot;,sum);
+                            return 0;
                             }
                         </pre>
                     </div>

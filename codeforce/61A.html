@@ -87,23 +87,24 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">題解 Codeforce 617A - Elephant</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 61A - Ultra-Fast Mathematician</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
-                            
-                            int main(){
-                            int a,b,c;
-                            cin&gt;&gt;a;
-                            b=a/5;
-                            if(a%5==0){
-                                cout&lt;&lt;b;
-                            }else{
-                                cout&lt;&lt;b+1;
-                                
-                            }
+                            int main()
+                            {
+                                string s,t;
+                                cin&gt;&gt;s&gt;&gt;t;
+                                for(int i=0;i&lt;s.length();i++){
+                                    if((s[i]==&#39;0&#39; &amp;&amp; t[i]==&#39;0&#39;) || (s[i]==&#39;1&#39; &amp;&amp; t[i]==&#39;1&#39;)){
+                                        cout&lt;&lt;&#39;0&#39;;
+                                    }else{
+                                        cout&lt;&lt;&#39;1&#39;;
+                                    }
+                                }
+                                return 0;
                             }
                         </pre>
                     </div>

@@ -87,23 +87,28 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">題解 Codeforce 617A - Elephant</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 116A - Tram</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
-                            
-                            int main(){
-                            int a,b,c;
-                            cin&gt;&gt;a;
-                            b=a/5;
-                            if(a%5==0){
-                                cout&lt;&lt;b;
-                            }else{
-                                cout&lt;&lt;b+1;
-                                
-                            }
+                            int main()
+                            {
+                                int n, a, b,c=0,m=0;
+                                scanf(&quot;%d&quot;, &amp;n);
+                                while (n--)
+                                {
+                                    scanf(&quot;%d%d&quot;, &amp;a, &amp;b);
+                                    c -= a;
+                                    c += b;
+                                    if (c &gt; m)
+                                    {
+                                        m = c;
+                                    }
+                                }
+                                printf(&quot;%d\n&quot;, m);
+                                return 0;
                             }
                         </pre>
                     </div>
@@ -114,7 +119,7 @@
                         width="100%"
                         style="height: 100%; min-height: 700px"
                         frameborder="0"
-                        ></iframe>                      
+                        ></iframe>
                     </div>
                 </div>
             </div>

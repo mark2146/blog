@@ -87,23 +87,30 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">題解 Codeforce 617A - Elephant</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 271A - Beautiful Year</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
                             
-                            int main(){
-                            int a,b,c;
-                            cin&gt;&gt;a;
-                            b=a/5;
-                            if(a%5==0){
-                                cout&lt;&lt;b;
-                            }else{
-                                cout&lt;&lt;b+1;
-                                
-                            }
+                            int main()
+                            {
+                                int  y;
+                                cin&gt;&gt;y;
+                                while(true){
+                                    int a=0,b=0,c=0,d=0;
+                                    y+=1;
+                                    a=y/1000;
+                                    b=y/100%10;
+                                    c=y/10%10;
+                                    d=y/1%10;
+                                    if(a!=b &amp;&amp; a!=c &amp;&amp; a!=d &amp;&amp; b!=c &amp;&amp; b!=d &amp;&amp; c!=d){
+                                        break;
+                                    }
+                                }
+                                cout&lt;&lt;y;
+                                return 0;
                             }
                         </pre>
                     </div>

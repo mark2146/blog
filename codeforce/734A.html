@@ -87,23 +87,34 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">題解 Codeforce 617A - Elephant</h2>
+                        <h2 style="margin-top: 20px;">題解 Codeforce 734A - Anton and Danik</h2>
                         <p>[題目敘述]: </p>
                         <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
                             
-                            int main(){
-                            int a,b,c;
-                            cin&gt;&gt;a;
-                            b=a/5;
-                            if(a%5==0){
-                                cout&lt;&lt;b;
-                            }else{
-                                cout&lt;&lt;b+1;
-                                
-                            }
+                            int main()
+                            {
+                                int a=0,b=0,t=0;
+                                cin&gt;&gt;t;
+                                char s[t]={&#39;0&#39;};
+                                for(int i=0;i&lt;t;i++){
+                                    cin&gt;&gt;s[i];
+                                    if(s[i]==&#39;D&#39;){
+                                        a++;
+                                    }else if(s[i]==&#39;A&#39;){
+                                        b++;
+                                    }
+                                }
+                                if(a&gt;b){
+                                    cout&lt;&lt;&quot;Danik&quot;;
+                                }else if(a&lt;b){
+                                    cout&lt;&lt;&quot;Anton&quot;;
+                                }else if(a==b){
+                                    cout&lt;&lt;&quot;Friendship&quot;;
+                                }
+                                return 0;
                             }
                         </pre>
                     </div>

@@ -49,6 +49,10 @@
         ul {
         list-style: none; /* 移除點點 */
         }
+        .tag {
+            color: black; /* 將文字顏色設為黑色 */
+            text-decoration: none; /* 去除文字下的裝飾，比如下劃線 */
+        }
     </style>
 </head>
 <body> 
@@ -62,17 +66,17 @@
         <div class="container">
             <div class="row">
                 <ul class="flex">
-                    <a href="index.html">Home</a>
-                    <a class="push" href="cpe.html">CPE</a>
-                    <li class="nav-item dropdown">
+                    <a class="tag" href="index.html">Home</a>
+                    <a class="push tag" href="cpe.html">CPE</a>
+                    <li class="tag nav-item dropdown">
                         <a class="nav-link dropdown-toggle push" href="#" role="button" data-bs-toggle="dropdown">Codeforce</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="800.html">800</a></li>
                             <li><a class="dropdown-item" href="900.html">900</a></li>
                         </ul>
                     </li>
-                    <a class="push" href="learn.html">學習歷程</a>
-                    <a class="push" href="self.html">自我介紹</a>
+                    <a class="tag push" href="learn.html">學習歷程</a>
+                    <a class="tag push" href="self.html">自我介紹</a>
                 </ul>
             </div>
         </div>
