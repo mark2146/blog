@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCore.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shThemeDefault.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushCpp.js"></script>
+    <script language='javascript' type='text/javascript'>
+    SyntaxHighlighter.config.bloggerMode = true;
+    SyntaxHighlighter.all();
+    </script>
+    <title>..</title>
+    <style>
+        .flex{
+            display:flex;
+        }
+        .push{
+            margin-left: 20px;
+        }
+        .mid{
+            background-color: #F6F7F8;
+            padding: 40px 50px 20px 50px;
+            height: 95vh;
+        }
+        .conten{
+            background-color: white;
+        }
+        .conten1{
+            background-color: white;
+            margin-left: 40px;
+        }
+        footer{
+            height: 5vh;
+            text-align: center;
+            background-color:#262f3c;
+        }
+        ul {
+            list-style: none; /* 移除點點 */
+        }
+        .syntaxhighlighter .line.alt1 {
+            background-color: white !important;
+        }
+        .syntaxhighlighter .line.alt2 {
+            background-color: #f9f9f9 !important;
+        }
+        .syntaxhighlighter {
+            background-color: #f9f9f9 !important;
+        }
+        a {
+            color: black; /* 將文字顏色設為黑色 */
+            text-decoration: none; /* 去除文字下的裝飾，比如下劃線 */
+        }
+    </style>
+</head>
+<body> 
+        <header style="background-color: w;"><header>
+        <div class="container">
+            <div class="row">
+                <h1 style="padding: 20px;">Mark's Blog</h1>
+            </div>
+        </div>
+        <hr style="margin-top: 0;">
+        <div class="container">
+            <div class="row">
+                <ul class="flex">
+                    <a href="../index.html">Home</a>
+                    <a class="push" href="../cpe.html">CPE</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle push" href="#" role="button" data-bs-toggle="dropdown">Codeforce</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../800.html">800</a></li>
+                            <li><a class="dropdown-item" href="../900.html">900</a></li>
+                        </ul>
+                    </li>
+                    <a class="push" href="../learn.html">學習歷程</a>
+                    <a class="push" href="../self.html">自我介紹</a>
+                </ul>
+            </div>
+        </div>
+        <hr style="margin-top: 0; margin-bottom: 0;">
+        <div class="mid">
+            <div class="container">
+                <div class="row flex">
+                    <div class="conten col-7">
+                        <h2 style="margin-top: 20px;">Codeforce 427A - Police Recruits</h2>
+                        <p>[題目敘述]: </p>
+                        <p>[解法]</p>
+                        <pre class="brush: cpp">
+                            #include &lt;bits/stdc++.h&gt;
+                            using namespace std;
+                            int main() {
+                                int t,x;
+                                int count=0;
+                                int ans=0;
+                                cin&gt;&gt;t;
+                                for(int i=0;i&lt;t;i++){
+                                    cin&gt;&gt;x;
+                                    if(x==-1){
+                                        if(count==0){
+                                            ans++;
+                                        }else{
+                                            count--;
+                                        }
+                                    }else{
+                                        count+=x;
+                                    }
+                                }
+                                cout&lt;&lt;ans&lt;&lt;endl;
+                            }
+                        </pre>
+                    </div>
+                    <div class="col-1" style="background-color: #F6F7F8;"></div>
+                    <div class="conten1 col-3">
+                        <iframe
+                        src="https://www.chatbase.co/chatbot-iframe/O2vt1RgkbY8P6aHvQhyTl"
+                        width="100%"
+                        style="height: 100%; min-height: 700px"
+                        frameborder="0"
+                        ></iframe>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</body>
+<footer>
+    <p style="color: #F6F7F8;">@Mark's</p>
+</footer>
+</html>
