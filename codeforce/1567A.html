@@ -87,30 +87,29 @@
             <div class="container">
                 <div class="row flex">
                     <div class="conten col-7">
-                        <h2 style="margin-top: 20px;">Codeforce <a href="">4A - Watermelon</a></h2>
+                        <h2 style="margin-top: 20px;">Codeforce 1567A - Domino Disaster</h2>
                         <p>[題目敘述]: </p>
-                        <ol>
-                            <li>Pete和Billy都非常喜歡偶數，他們要把西瓜分成兩部分，每部分都是偶數公斤，同時兩部分不必一定要相等。</li>
-                          </ol>
-                        <p>[解法]:</p>
-                        <ol>
-                            <li>計算 y 為 x - 2，這裡的目的是檢查除去一個最小的偶數部分（2公斤）之後，剩餘的重量是否是偶數。</li>
-                            <li>如果 y 是奇數（y % 2 返回 true）或者 y 等於 0，那麼輸出 "NO",否則，輸出 "YES"。</li>
-                            <li>如果 y 是0也輸出 "NO" 因為x=2的時候無法分成兩個偶數。</li>
-                        </ol>
-                        <p>[程式碼]:</p>
+                        <p>[解法]</p>
                         <pre class="brush: cpp">
                             #include &lt;bits/stdc++.h&gt;
                             using namespace std;
-                             
+                            
                             int main() {
-                                int x;
-                                cin&gt;&gt;x;
-                                int y=x-2;
-                                if(y%2 || y==0){
-                                    cout&lt;&lt;&quot;NO&quot;&lt;&lt;endl;
-                                }else{
-                                    cout&lt;&lt;&quot;YES&quot;&lt;&lt;endl;
+                                string s;
+                                int t,n;
+                                cin&gt;&gt;t;
+                                while(t--){
+                                    cin&gt;&gt;n&gt;&gt;s;
+                                    for(int i=0;i&lt;s.length();i++){
+                                        if(s[i]==&#39;D&#39;){
+                                            cout&lt;&lt;&#39;U&#39;;
+                                        }else if(s[i]==&#39;U&#39;){
+                                            cout&lt;&lt;&#39;D&#39;;
+                                        }else{
+                                            cout&lt;&lt;s[i];
+                                        }
+                                    }    
+                                    cout&lt;&lt;endl;
                                 }
                             }
                         </pre>
